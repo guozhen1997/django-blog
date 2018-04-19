@@ -24,7 +24,6 @@ SECRET_KEY = 'rz5maby$_j7k@ab3gu8!88&hff0!=m!a2397nd-t@cu*s5owpj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost ', '.guozhen.kim']
 
 

@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from django.utils.six import python_2_unicode_compatible
 
-# Create your models here.
 class Category(models.Model):
     """
     Django 要求模型必须继承 models.Model 类。
