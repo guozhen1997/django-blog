@@ -1,0 +1,8 @@
+{% for choice in question.choice_set.all %}
+    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}-------------------- {{ choice.votes }} vote{{ choice.votes|pluralize }}</label><br />
+{% endfor %}
+<input type="submit" value="Vote" />
+</form>
+<br /><br />
+<a href="{% url 'polls:index' %}">返回投票列表</a>
